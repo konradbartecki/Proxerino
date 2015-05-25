@@ -1,5 +1,5 @@
 # Proxerino
-Proxerino - Socks v5 server for WinRT 8.1+ devices - open-sourced for debugging purposes :c
+Socks v5 server for WinRT 8.1+ devices - open-sourced for debugging purposes :c
 
 Steps to run/debug this app:
 

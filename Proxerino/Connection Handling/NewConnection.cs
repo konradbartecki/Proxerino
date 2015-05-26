@@ -21,11 +21,15 @@ namespace Proxerino.Connection_Handling
         private StreamSocket clientSocket;
         private StreamSocket outgoingSocket;
 
-
         private CancellationTokenSource tokenSource;
 
         public HostName ClientsHostname { get; private set; }
 
+        /// <summary>
+        /// Contains IsAlive state of both connections
+        /// so if both [0] and [1] == dead
+        /// we can close the connection
+        /// </summary>
         private byte[] byteLock = new byte[2];
 
         public NewConnection(StreamSocket socket)
@@ -58,6 +62,12 @@ namespace Proxerino.Connection_Handling
             Parallel.Invoke(() => clienttoDestinationLoopTask(), () => destinationToClientLoopTask());
         }
 
+        /// <summary>
+        /// This is some kind of heartbeat for connections so 
+        /// we will close connection only if both of them have disconnected
+        /// </summary>
+        /// <param name="i">Connection ID</param>
+        /// <param name="b">IsAlive? 0 = Alive, 1 = Dead</param>
         private void CheckLock(int i, byte b)
         {
             byteLock[i] = b;

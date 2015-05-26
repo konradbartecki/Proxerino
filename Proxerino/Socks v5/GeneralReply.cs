@@ -80,10 +80,11 @@ namespace Proxerino
                 _bytes[3] = Map.AddressType.IPV4;
                 newServerSocketAddress.ToBytes().CopyTo(_bytes, 4);
                 newServerSocketPort.ToBytes().CopyTo(_bytes, 8);
+
                 if (_bytes.Count() != 10)
                 {
                     //Expected byte array length is 10. Something is clearly wrong.
-                    throw new Exception("Something went wrong when preparing reply message");
+                    throw new Exception("Received too few bytes when preparing 'General Reply' message");
                 }
             }
         }

@@ -25,7 +25,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Set your device IP address in &quot;Socks Universal/Config.cs&quot;." Margin="10,0,22,68" VerticalAlignment="Bottom" FontSize="14.667" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Checkout VS output windows for some useful info" Margin="10,0,22,68" VerticalAlignment="Bottom" FontSize="14.667" HorizontalAlignment="Left"/>
         <TextBlock x:Name="textBlock_Copy" TextWrapping="Wrap" Text="This server does not support authentication or encryption." Margin="10,0,0,45" VerticalAlignment="Bottom" FontSize="14.667" HorizontalAlignment="Left"/>
         <TextBlock x:Name="textBlock_Copy1" TextWrapping="Wrap" Text="Chrome, IE, Opera use GSSAPI by default - it won't work - Use FF." Margin="10,0,0,5" VerticalAlignment="Bottom" FontSize="14.667" HorizontalAlignment="Left"/>
         <TextBlock x:Name="textBlock_Copy2" TextWrapping="Wrap" Text="Connected client's IP and number of connections in parentheses displayed above" Margin="10,0,29,91" VerticalAlignment="Bottom" FontSize="12" FontWeight="Bold" HorizontalAlignment="Center"/>

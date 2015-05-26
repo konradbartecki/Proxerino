@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,21 +40,14 @@
     <TargetPlatform Include="WindowsPhoneApp, Version=8.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection Handling\BaseConnection.cs" />
-    <Compile Include="Connection Handling\ConnectionPair.cs" />
     <Compile Include="Connection Handling\ConnectionManager.cs" />
     <Compile Include="Connection Handling\NewConnection.cs" />
-    <Compile Include="Connection Handling\Proxy.cs" />
     <Compile Include="Connection Handling\SocketExtension.cs" />
     <Compile Include="Network Types\Domain.cs" />
     <Compile Include="Connection Handling\Client.cs" />
-    <Compile Include="Socks Universal\Message.cs" />
     <Compile Include="Socks v5\Map.cs" />
-    <Compile Include="Socks v5\Exceptions.cs" />
     <Compile Include="Socks v5\ClientsRequest.cs" />
-    <Compile Include="Socks v5\StageEnum.cs" />
     <Compile Include="SocksServer.cs" />
-    <Compile Include="Socks Universal\LogObserver.cs" />
     <Compile Include="Socks Universal\Config.cs" />
     <Compile Include="Socks Universal\Exceptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

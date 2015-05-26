@@ -1,6 +1,5 @@
-﻿using Windows.Networking.Sockets;
-using Windows.Networking;
-using Windows.UI.Xaml.Media;
+﻿using Windows.Networking;
+using Windows.Networking.Sockets;
 
 namespace Proxerino
 {
@@ -9,19 +8,18 @@ namespace Proxerino
         public static class Listener
         {
             public const string DefaultServiceName = "1080";
-
-            public static uint BufferSize = 64 * 1024;
-            //You must enter your WinRT device IP address below
-            public static HostName IP = new HostName("192.168.1.31");
+            public static uint BufferSize = 64*1024;
+            public static HostName IP = new HostName("192.168.1.2");
             public static string ServiceName = "8080";
             public static SocketQualityOfService QoS = SocketQualityOfService.Normal;
             public static bool KeepConnectionsAlive = false;
             public static bool AllowOnlySocksV5Connections = false;
-            public static bool UseCellularDataOnly = false;
-            public static string WelcomeString = "Proxerino v{0} SOCKS server, hi!{1}Please specify your connection method{1} (in bytes)";
+            public static bool UseCellularDataOnly = true;
 
-            //public static bool ListenOnAllInterfaces = true; not used
+            public static string WelcomeString =
+                "Proxerino v{0} SOCKS server, hi!{1}Please specify your connection method{1} (in bytes)";
         }
+
         public static class About
         {
             public static string Version = "0.2";
@@ -36,7 +34,6 @@ namespace Proxerino
             public static readonly string ServerAlreadyRunning = "Server is already running";
             public static readonly string StoppingServer = "Stopping server";
             public static readonly string UsingPortOnly = "Using port only. Trying to determine IP Address...";
-
         }
     }
 }

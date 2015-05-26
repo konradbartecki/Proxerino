@@ -66,10 +66,7 @@ namespace Proxerino
                     }
                 }
             }
-            else
-            {
-                //TODO: Message Log: "Server already running"
-            }
+            //TODO: Message Log: "Server already running"
         }
 
         public void Start(string port)

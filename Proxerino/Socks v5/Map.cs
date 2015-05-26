@@ -59,6 +59,12 @@ namespace Proxerino.Socks_v5
 
         public static class Lenghts
         {
+
+            /// <summary>
+            /// Minimal client's request message lenght
+            /// anything below means we have recieved too few bytes
+            /// and we will display an error :-)
+            /// </summary>
             public const int MinimalClientsRequestLength = 8;
         }
 

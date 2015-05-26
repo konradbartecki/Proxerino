@@ -1,5 +1,5 @@
 # Proxerino
-Currently working SOCKS v5 server for Windows and Windows Phone 8.1. It's not stable although it allows for basic network access, so if you are looking for some free proxy server for WP or WinRT feel free to compile it on your own.
+Currently working SOCKS v5 server for Windows and Windows Phone 8.1. It's not super stable, it allows for basic network access however. If you are looking for some basic and free proxy server for WP or WinRT then you've just found it. Feel free to compile it on your own from the source code, which is made public for the time being to allow anyone help with debugging.
 It's made around Windows.Networking.Sockets in Portable Class Library (PCL) so it can run on all WinRT 8.1+ devices.
 
 Steps to run/debug this app:

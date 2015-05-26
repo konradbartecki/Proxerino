@@ -5,7 +5,7 @@ It's made around Windows.Networking.Sockets in Portable Class Library (PCL) so i
 Steps to run/debug this app:
 
 1. Connect to your WLAN on your Windows Phone
-2. (Optional) Force usage of cellular data by proxy server in Config.cs
+2. (Optional) Disable usage of cellular data by proxy server in Config.cs
 3. Build and run the app - server starts listening automatically. Watch VS output for some useful info
 4. In Firefox network setting select SOCKSv5, and enter SOCKS server address + default port of 8080
 ![Screenshot](http://i.imgur.com/rC9Tvgn.png)

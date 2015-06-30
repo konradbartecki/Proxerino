@@ -9,7 +9,7 @@ Steps to run/debug this app:
 3. Build and run the app - server starts listening automatically. Watch VS output for some useful info
 4. In Firefox network setting select SOCKSv5, and enter SOCKS server address + default port of 8080
 ![Screenshot](http://i.imgur.com/rC9Tvgn.png)
-5. Browse web and enjoy deteriorating performance :---DDDDDDD
+5. Browse web and watch out for bugs
 
 Usage scenario:
 
